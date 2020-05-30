@@ -1,0 +1,40 @@
+	.flex-container {
+	  display: flex;
+align-items: center;
+flex-direction:row;
+}
+.flex-container div {
+	
+  width:100px;
+  margin: auto 10px 10px ;
+  height:150px;
+font-size:40px;
+font-family:Tahoma;
+text-align:left;
+ 
+border-color: #d0d0ff;
+border-left-width: 10px;
+
+}
+ .flex-container .color1{
+	background-color:#eeeff2; 
+	border-left-style: dotted; 
+}
+ .flex-container .color2{
+	background-color:#eeeff2;
+	border-left-style: dotted; 
+
+
+}
+ .flex-container .color3{
+	background-color:#dfe1e7;
+	border-left-style: dotted; 
+	position:absolute;/* why.. absolute*/
+	 bottom: 0px;/* position ....absolute */
+  right: 0px;
+}
+.size{
+	margin-left:10px;
+}
+
+

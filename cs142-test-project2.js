@@ -1,13 +1,5 @@
 'use strict';
-/*
- * This file tests the CS142 Project #2 JavaScript assignment problems. It prints what
- * it finds to the console log and updates the text being displayed in the window with a
- * summary of the results.
- */
 
-// We assume these symbols will be globally defined by the user. These var statements
-// will assign undefined to the symbol if it isn't global already.
-// These global symbols are needed to test your file and you don't have to worry about them for Problem 3.
 var cs142MakeMultiFilter;
 var Cs142TemplateProcessor;
 
@@ -17,12 +9,11 @@ var p1Message = 'SUCCESS';
 var p2Message = 'SUCCESS';
 var p3Message = 'SUCCESS';
 
-// Keep track of all the var statements
+
 var varDeclared = ['varDeclared', 'p1Message', 'p2Message', 'p3Message'];
 
 
 
-// ********************* Test cs142filter
 
 if (typeof cs142MakeMultiFilter !== 'function') {
     console.error('cs142MakeMultiFilter is not a function', typeof cs142MakeMultiFilter);
@@ -114,7 +105,7 @@ if (typeof cs142MakeMultiFilter !== 'function') {
 }
 console.log('Test cs142MakeMultiFilter:', p1Message);
 
-// ********************* Test Cs142TemplateProcessor
+
 
 if (typeof Cs142TemplateProcessor !== 'function') {
     console.error('Cs142TemplateProcessor is not a function', Cs142TemplateProcessor);
@@ -139,7 +130,7 @@ if (typeof Cs142TemplateProcessor !== 'function') {
 }
 console.log('Test Cs142TemplateProcessor:', p2Message);
 
-// ********************* Test to see if the symbols we defined are in the global address space
+
 
 varDeclared.forEach(function (sym) {
 
@@ -150,20 +141,17 @@ varDeclared.forEach(function (sym) {
 });
 console.log('Test Problem 3:', p3Message);
 
-// Store the result back into the global space under the object name cs142Project2Results
+
 window.cs142Project2Results = {
     p1Message: p1Message,
     p2Message: p2Message,
     p3Message: p3Message,
 };
 
-// Once the browser loads our companion HTML in cs142-test-project2.html we
-// update it with the results of our testing. This code will make more
-// sense after the next project.
 window.onload = function () {
     document.getElementById("cs142p1").innerHTML = p1Message;
     document.getElementById("cs142p2").innerHTML = p2Message;
     document.getElementById("cs142p3").innerHTML = p3Message;
 };
-//anonymous function ends
+
 func();

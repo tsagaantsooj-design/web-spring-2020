@@ -130,8 +130,6 @@ if (typeof Cs142TemplateProcessor !== 'function') {
 }
 console.log('Test Cs142TemplateProcessor:', p2Message);
 
-
-
 varDeclared.forEach(function (sym) {
 
     if (window[sym] !== undefined) {
